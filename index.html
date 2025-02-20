@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Cash Register</title>
+  </head>
+  <body>
+    <h1>Cash Register</h1>
+    <div class="change">
+      <p>Status: idk</p>
+    </div>
+
+    <div class="input-div">
+      <label class="cash-label" for="cash">Enter cash:</label>
+      <input id="cash" class="user-input" type="number" />
+      <button id="purchase-btn">Submit</button>
+    </div>
+
+    <div class="register-container">
+      <div class="screen">
+        <p id="price-screen">Total: $0</p>
+        <div class="connector"></div>
+      </div>
+
+      <div class="register">
+        <div class="buttons">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
+        <div class="currency">
+          <p>
+            <strong>Cash in register:</strong>
+          </p>
+          <p>Pennies: $0</p>
+          <p>Nickels: $0</p>
+          <p>Dimes: $0</p>
+          <p>Quarters: $0</p>
+          <p>Ones: $0</p>
+          <p>Fives: $0</p>
+          <p>Tens: $0</p>
+          <p>Twenties: $0</p>
+          <p>Hundreds: $0</p>
+        </div>
+      </div>
+      <div class="register-bottom">
+        <div class="circle"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

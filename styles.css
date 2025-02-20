@@ -1,0 +1,104 @@
+body {
+  background-color: rgba(25, 10, 60, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: white;
+}
+h1 {
+  font-size: 2.5rem;
+}
+.input-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.change {
+  font-size: 20px;
+}
+#price-screen {
+  background-color: blue;
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+}
+.connector {
+  width: 30px;
+  height: 30px;
+  background-color: green;
+}
+.cash-label {
+  font-size: 25px;
+}
+.user-input {
+  height: 25px;
+  width: 200px;
+}
+.register {
+  background-color: teal;
+  width: 400px;
+  height: 400px;
+  display: flex;
+}
+#cash {
+  margin: 15px;
+}
+#purchase-btn {
+  width: 130px;
+  height: 30px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.register-container {
+  background-color: rgb(0, 0, 0, 0.1);
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.currency {
+  background-color: gray;
+  width: 125px;
+  height: 260px;
+}
+.currency p {
+  margin: 7px 0 0 0;
+  padding: 0;
+}
+.buttons div {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  margin: 5px;
+}
+.buttons {
+  width: 90px;
+  height: 90px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.btn {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  margin: 5px;
+}
+.register-bottom {
+  width: 200px;
+  height: 50px;
+  background-color: teal;
+}
+.circle {
+  background-color: black;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
