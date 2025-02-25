@@ -47,12 +47,10 @@ h1 {
 .cash-label {
   font-size: 25px;
 }
-.user-input {
+#user-input {
   height: 30px;
   width: 250px;
   font-size: 16px;
-}
-#cash {
   margin: 15px;
 }
 #purchase-btn {
@@ -64,6 +62,7 @@ h1 {
   font-weight: bold;
   font-size: 20px;
   border: solid 3px rgb(161, 129, 23);
+  cursor: pointer;
 }
 
 #purchase-btn:hover {
@@ -90,12 +89,15 @@ h1 {
 .currency p {
   margin: 3px 0 0 0;
 }
-.buttons div {
+.buttons button {
   width: 20px;
   height: 20px;
   background-color: black;
   margin: 5px;
   border-radius: 35%;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 .buttons {
   margin: 65px 20px 0 35px;
