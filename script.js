@@ -1,6 +1,7 @@
 const input = document.getElementById("user-input");
 const submit = document.getElementById("purchase-btn");
 const buttons = document.querySelectorAll(".buttons button");
+const priceBackground = document.getElementById("priceBackground");
 
 let price = 1.87;
 const cash = 0;
@@ -30,4 +31,13 @@ buttons.forEach((button) => {
   });
 });
 
-const calculate = () => {};
+window.addEventListener("load", () => {
+  console.log("loaded");
+  priceBackground.textContent = `Total $${price}`;
+});
+
+const calculate = () => {
+  if (cash < price) {
+    alert("Customer does not have enough money to purchase the item");
+  }
+};

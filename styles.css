@@ -20,28 +20,33 @@ h1 {
 .change {
   font-size: 20px;
 }
-#price-screen {
+#priceScreen {
   background-color: rgb(150, 150, 150);
   width: 160px;
   height: 50px;
   font-size: 20px;
-  text-align: center;
   margin-left: 65px;
   text-align: center;
   vertical-align: middle;
   line-height: 50px;
   border-radius: 10px;
   color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#price-screen span {
+#priceBackground {
   background-color: rgb(221, 221, 221);
-  padding: 0 20px 0 20px;
+  width: 110px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .connector {
   width: 20px;
-  height: 30px;
-  padding: 0;
-  margin: -20px 0 0 135px;
+  height: 20px;
+  margin: auto;
   background-color: rgb(150, 150, 150);
 }
 .cash-label {
