@@ -11,6 +11,9 @@ body {
 h1 {
   font-size: 2.5rem;
 }
+#regStatus {
+  display: none;
+}
 .input-div {
   display: flex;
   flex-direction: column;
@@ -37,7 +40,9 @@ h1 {
 }
 #priceBackground {
   background-color: rgb(221, 221, 221);
-  width: 110px;
+  min-width: 100px;
+  width: auto;
+  padding: 0 5px 0 5px;
   height: 30px;
   display: flex;
   flex-direction: column;
@@ -94,7 +99,21 @@ h1 {
 .currency p {
   margin: 3px 0 0 0;
 }
-.buttons button {
+.btns {
+  margin: 55px 20px 0 35px;
+  width: 90px;
+  height: fit-content;
+  background-color: rgb(221, 221, 221);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 20px;
+  border-radius: 10px;
+}
+.btns button {
   width: 20px;
   height: 20px;
   background-color: black;
@@ -103,25 +122,6 @@ h1 {
   color: white;
   border: none;
   cursor: pointer;
-}
-.buttons {
-  margin: 65px 20px 0 35px;
-  width: 90px;
-  height: 120px;
-  background-color: rgb(221, 221, 221);
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 20px;
-  border-radius: 10%;
-}
-.btn {
-  width: 20px;
-  height: 20px;
-  background-color: black;
-  margin: 5px;
 }
 .register-bottom {
   border-top: 10px solid rgb(40, 40, 40);
