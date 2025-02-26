@@ -4,8 +4,9 @@ const buttons = document.querySelectorAll(".btns button");
 const priceBackground = document.getElementById("priceBackground");
 const regStatus = document.getElementById("regStatus");
 
-let price = "0";
+let price = 0;
 let cash = 0;
+
 let cid = [
   ["PENNY", 1.01],
   ["NICKEL", 2.05],
@@ -18,44 +19,42 @@ let cid = [
   ["ONE HUNDRED", 100],
 ];
 
-input.value = cash;
-
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
     const number = button.textContent;
+    strPrice = "" + price;
     if (number === "✓") {
       calculate();
     } else if (number === "✗") {
-      price = "0";
+      strPrice = "0";
     } else if (number === "←") {
-      price = price.slice(0, -1);
-    }
-
-    if (price === "") {
-      price = "0";
-    }
-
-    if (price.length <= 8 && !isNaN(number)) {
-      if (price === "0") {
-        price = "";
-      }
-      price += number;
+      strPrice = strPrice.slice(0, -1);
     } else if (number === ".") {
-      price += ".";
-    } else if (price.length >= 8) {
-      alert("The price cannot be higher");
+      if (!strPrice.includes(".")) {
+        strPrice += ".";
+      }
+    } else if (!isNaN(number)) {
+      if (strPrice === "0") {
+        strPrice = number;
+      } else if (strPrice.length < 8) {
+        strPrice += number;
+      } else {
+        alert("The price cannot be higher");
+      }
     }
-
-    priceBackground.textContent = `Total $${price}`;
+    if (strPrice === "") {
+      strPrice = "0";
+    }
+    priceBackground.textContent = `Total: $${strPrice}`;
+    price = parseFloat(strPrice);
   });
 });
 
 const calculate = () => {
-  if (cash < parseInt(price)) {
+  const intCash = parseInt(input.value);
+  const intPrice = parseInt(strPrice);
+  if (intCash < intPrice) {
     alert("Customer does not have enough money to purchase the item");
-  } else if (cash === parseInt(price)) {
-    regStatus.style.display = "block";
-    regStatus.textContent = "Status: CLOSED";
   }
 };
 
