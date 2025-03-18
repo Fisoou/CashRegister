@@ -6,15 +6,15 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Cash Register</title>
   </head>
-  <body>
+  <body onload="updateRegisterDisplay()" ;>
     <h1>Cash Register</h1>
     <div class="change">
-      <p id="regStatus">Status: Template</p>
+      <p id="change-due"></p>
     </div>
 
     <div class="input-div">
       <label class="cash-label" for="user-input">Enter cash:</label>
-      <input id="user-input" />
+      <input id="cash" />
       <button type="button" id="purchase-btn">Submit</button>
     </div>
 
@@ -51,15 +51,17 @@
           <p>
             <strong>Cash in register:</strong>
           </p>
-          <p>Pennies: $0</p>
-          <p>Nickels: $0</p>
-          <p>Dimes: $0</p>
-          <p>Quarters: $0</p>
-          <p>Ones: $0</p>
-          <p>Fives: $0</p>
-          <p>Tens: $0</p>
-          <p>Twenties: $0</p>
-          <p>Hundreds: $0</p>
+          <div id="money">
+            <p>Pennies: $0</p>
+            <p>Nickels: $0</p>
+            <p>Dimes: $0</p>
+            <p>Quarters: $0</p>
+            <p>Ones: $0</p>
+            <p>Fives: $0</p>
+            <p>Tens: $0</p>
+            <p>Twenties: $0</p>
+            <p>Hundreds: $0</p>
+          </div>
         </div>
       </div>
       <div class="register-bottom">

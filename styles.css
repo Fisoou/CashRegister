@@ -11,9 +11,6 @@ body {
 h1 {
   font-size: 2.5rem;
 }
-#regStatus {
-  display: none;
-}
 .input-div {
   display: flex;
   flex-direction: column;
@@ -57,7 +54,7 @@ h1 {
 .cash-label {
   font-size: 25px;
 }
-#user-input {
+#cash {
   height: 30px;
   width: 250px;
   font-size: 16px;
@@ -89,7 +86,7 @@ h1 {
 }
 .currency {
   background-color: rgb(221, 221, 221);
-  width: 117px;
+  width: 137px;
   height: 210px;
   margin-top: 25px;
   color: black;
@@ -100,7 +97,7 @@ h1 {
   margin: 3px 0 0 0;
 }
 .btns {
-  margin: 55px 20px 0 35px;
+  margin: 55px 20px 0 15px;
   width: 90px;
   height: fit-content;
   background-color: rgb(221, 221, 221);
